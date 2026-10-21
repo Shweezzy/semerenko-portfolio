@@ -4,7 +4,7 @@
   "original_file_count": 153,
   "optimized": true,
   "file_count": 107,
-  "total_bytes": 7039254,
+  "total_bytes": 7037274,
   "files": [
     {
       "path": "dist/apple-touch-icon.png",
@@ -28,8 +28,8 @@
     },
     {
       "path": "dist/education.html",
-      "bytes": 107757,
-      "sha256": "9b98a0d0faf0e234d5b9b22ddc18a088656a77578c7f41cdbb1e5daf97cc5795"
+      "bytes": 107710,
+      "sha256": "b23956f59711ea4aae79e743e9b22d3eaed46fa517bd7909eec77f668b806ba7"
     },
     {
       "path": "dist/education/admission.webp",
@@ -298,13 +298,13 @@
     },
     {
       "path": "dist/index.html",
-      "bytes": 103755,
-      "sha256": "b6400318d2b747837aad5092193684372db8a9af75c2fb3a68658bdbc7c9ac28"
+      "bytes": 103722,
+      "sha256": "8986f4deaad8612975b9f6d4e83aa5d832570dbead9f4b122b7eb395ee6c5c5f"
     },
     {
       "path": "dist/landing.html",
-      "bytes": 92843,
-      "sha256": "97f58d98dcc20dea4c2c0cddfdf7d9708bddac42eb01ab62b0e4b73c8cfacfaf"
+      "bytes": 92796,
+      "sha256": "bd6bc39a78d354fbd89d7a9216a0681dadf2a4fc49814dc5646b4e806b4ae131"
     },
     {
       "path": "dist/og-image.jpg",
@@ -313,8 +313,8 @@
     },
     {
       "path": "dist/pets.html",
-      "bytes": 182189,
-      "sha256": "2346612da755ccea51741b05979d08297851224b648e291e2c2ee448bab0ea44"
+      "bytes": 182134,
+      "sha256": "e5281f33bbb28d6df480e4df0c759845c9ff1b15885db99efef864d254d6d48c"
     },
     {
       "path": "dist/portfolio-type.css",
@@ -473,13 +473,13 @@
     },
     {
       "path": "dist/site.css",
-      "bytes": 4098,
-      "sha256": "80b2c71a4bc6efd104f4b78e5c40e0625708731a1187b23284ad117d223c1442"
+      "bytes": 5270,
+      "sha256": "14d86342da9a9eb80522b7907b29db7d34d20aef66b5d350818a26ff85b7e95e"
     },
     {
       "path": "dist/site.js",
-      "bytes": 10089,
-      "sha256": "de5cc18105fa6e17d9bb81ab0c4a1a00853621151fa1ab70f62e9b5ede76b1fa"
+      "bytes": 7119,
+      "sha256": "b7b173749b54f4f0a7ba24908e6f867fb4577dfa07535dfe9a54b6f36acdfb0b"
     },
     {
       "path": "dist/synthetica/badge-anastasia.webp",

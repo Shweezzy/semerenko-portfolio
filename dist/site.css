@@ -33,6 +33,23 @@ body.case-grid-layout > footer.case-grid-footer a:hover { color: #fff; }
   body > footer > a { display: inline-flex !important; align-items: center; min-height: 0 !important; padding: 13px 0; margin: -13px 0; }
 }
 
+/* Mobile menu button: its own glass tile matching the navigation pill (same height, radius and
+   glass), so the dark icon stays readable over any page background. */
+@media (max-width: 750px) {
+  body .portfolio-menu-toggle,
+  body .portfolio-menu-toggle:hover,
+  body .portfolio-menu-toggle:focus-visible {
+    background: rgba(255, 255, 255, .66) !important;
+    -webkit-backdrop-filter: blur(26px) saturate(1.35);
+    backdrop-filter: blur(26px) saturate(1.35);
+    border: 1px solid rgba(160, 160, 160, .45) !important;
+    border-radius: 16px !important;
+    color: #111 !important;
+  }
+  body .portfolio-menu-toggle:active { background: rgba(235, 235, 235, .8) !important; }
+  body .portfolio-menu-toggle svg { color: #111 !important; }
+}
+
 /* Open menu on dark pages: a light panel so it stands apart from the dimmed dark page. */
 @media (max-width: 750px) {
   body.case-grid-layout .portfolio-contact-menu .contact-panel,
@@ -44,6 +61,15 @@ body.case-grid-layout > footer.case-grid-footer a:hover { color: #fff; }
   body.case-grid-layout .portfolio-contact-menu .contact-menu-close:focus-visible { color: #000 !important; }
   body.case-grid-layout .portfolio-contact-menu .contact-panel > a:focus-visible { outline-color: #000; }
   body.case-grid-layout .portfolio-contact-menu.menu-visible::backdrop { background: rgba(0, 0, 0, .45); }
+}
+
+/* Page transitions (Chrome, Edge, Safari 18.2+; others just navigate): content cross-fades while
+   the header stays in place. */
+@view-transition { navigation: auto; }
+body > header { view-transition-name: site-header; }
+::view-transition-group(root) { animation-duration: .32s; animation-timing-function: cubic-bezier(.4, 0, .2, 1); }
+@media (prefers-reduced-motion: reduce) {
+  @view-transition { navigation: none; }
 }
 
 /* Home project counter: digits roll like a reel (animated in index.html). */

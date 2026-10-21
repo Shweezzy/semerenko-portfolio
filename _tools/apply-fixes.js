@@ -33,6 +33,13 @@ for (const page of PAGES) {
   });
 }
 
+// Internal links point at clean URLs, saving the .html -> clean URL redirect on every navigation
+// (which also keeps cross-document view transitions on a single same-origin hop).
+for (const page of PAGES) {
+  edit(page, html => html.replace(/href="(index|education|pets|landing)\.html(#[^"]*)?"/g,
+    (m, name, hash = '') => `href="/${name === 'index' ? '' : name}${hash}"`));
+}
+
 edit('landing', html => replaceOnce(html,
   '<video id="syn-desktop-video" src=',
   '<video id="syn-desktop-video" width="872" height="4096" src=',
