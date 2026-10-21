@@ -1,4 +1,5 @@
 node_modules/
 .vercel/
 _archive/
-_tools/
+_tools/node_modules/
+_tools/package-lock.json
