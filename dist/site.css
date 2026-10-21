@@ -1,0 +1,70 @@
+/* Shared fixes for all pages. Loaded after each page's inline styles. */
+
+/* Touch: let swipes that start on a phone screen or mockup pass on to the carousel or the page.
+   `overscroll-behavior: contain` is kept for mouse/trackpad, where it stops the page scrolling
+   under the cursor; on touch screens it trapped the finger inside non-scrollable screens. */
+@media (pointer: coarse) {
+  .pet-screen,
+  .catalog-scroll,
+  .mobile-device-viewport,
+  .admission-viewport,
+  .syn-mobile-viewport,
+  .syn-desktop-viewport { overscroll-behavior: auto !important; }
+  .pet-screen,
+  .catalog-scroll { touch-action: pan-x pan-y !important; }
+}
+
+/* Synthetica desktop mockup: keep the tall video's shape before it loads. iOS battery saver never
+   loads it, and WebKit then sized the box 2:1 and letterboxed the poster into a black strip. */
+#syn-desktop-video { aspect-ratio: 872 / 4096; object-fit: cover; object-position: top; }
+/* The poster is also painted as a background: WebKit leaves an unloaded video black instead of
+   drawing its poster, so this keeps the first frame visible until the video actually plays. */
+#syn-desktop-video { background: #080808 url(synthetica/desktop-poster-2.webp) center top / 100% auto no-repeat; }
+
+/* Scroll hints live in document coordinates so they move with the page natively. */
+.mockup-gesture-hint { position: absolute !important; }
+
+/* One footer style for every case page: same muted text and hairline as the dark theme. */
+body.case-grid-layout > footer.case-grid-footer { color: #aaa; border-top: 1px solid #333; }
+body.case-grid-layout > footer.case-grid-footer a:hover { color: #fff; }
+/* Same rhythm on phones everywhere, with a 44px tap target that does not change the layout. */
+@media (max-width: 750px) {
+  body > footer { gap: 25px !important; }
+  body > footer > a { display: inline-flex !important; align-items: center; min-height: 0 !important; padding: 13px 0; margin: -13px 0; }
+}
+
+/* Open menu on dark pages: a light panel so it stands apart from the dimmed dark page. */
+@media (max-width: 750px) {
+  body.case-grid-layout .portfolio-contact-menu .contact-panel,
+  body.case-grid-layout .portfolio-contact-menu .contact-panel-head { background: #fff; color: #000; }
+  body.case-grid-layout .portfolio-contact-menu .contact-panel > a,
+  body.case-grid-layout .portfolio-contact-menu .contact-menu-close,
+  body.case-grid-layout .portfolio-contact-menu .contact-menu-close:hover,
+  body.case-grid-layout .portfolio-contact-menu .contact-menu-close:active,
+  body.case-grid-layout .portfolio-contact-menu .contact-menu-close:focus-visible { color: #000 !important; }
+  body.case-grid-layout .portfolio-contact-menu .contact-panel > a:focus-visible { outline-color: #000; }
+  body.case-grid-layout .portfolio-contact-menu.menu-visible::backdrop { background: rgba(0, 0, 0, .45); }
+}
+
+/* Home project counter: digits roll like a reel (animated in index.html). */
+.work-stage .work-progress .count-current .count-digit { display: inline-block; height: 1em; overflow: hidden; vertical-align: top; }
+.work-stage .work-progress .count-current .count-reel { display: flex; flex-direction: column; will-change: transform; }
+.work-stage .work-progress .count-current .count-reel > span { display: block; height: 1em; line-height: 1; }
+
+/* Home "reading" paragraph: drive the word fade from scroll on the compositor where supported,
+   so it stays smooth when the main thread is throttled (e.g. battery saver). Ranges come from JS. */
+@supports (animation-timeline: view()) {
+  /* Inset 0: the default would shrink the range by the page's scroll-padding-top (sticky header). */
+  .reading-stage { view-timeline: --reading block; view-timeline-inset: 0; }
+  html.scroll-timeline .reading .word {
+    opacity: .12;
+    transition: none;
+    animation: reading-word linear both;
+    animation-timeline: --reading;
+    animation-range: cover var(--word-start) cover var(--word-end);
+  }
+  @keyframes reading-word { to { opacity: 1; } }
+}
+@media (prefers-reduced-motion: reduce) {
+  html.scroll-timeline .reading .word { animation: none; opacity: 1; }
+}

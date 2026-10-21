@@ -1,7 +1,7 @@
 // Serves dist/ like Vercel (clean URLs), loads every page in Chrome at desktop and mobile widths,
 // scrolls to trigger lazy content and reports console errors and failed requests.
 const http = require('http'), path = require('path'), handler = require('serve-handler');
-const { chromium } = require('playwright-core');
+const pw = require('playwright-core');
 const DIST = process.env.DIST || path.join(__dirname, '..', 'dist');
 const OUT = process.env.SHOTS || path.join(require('os').tmpdir(), 'shots');
 const PAGES = ['/', '/education', '/pets', '/landing'];
@@ -10,7 +10,7 @@ const VIEWPORTS = { desktop: { width: 1440, height: 900 }, mobile: { width: 390,
 (async () => {
   require('fs').mkdirSync(OUT, { recursive: true });
   const server = http.createServer((req, res) => handler(req, res, { public: DIST, cleanUrls: true })).listen(4173);
-  const browser = await chromium.launch({ executablePath: 'C:/Program Files/Google/Chrome/Application/chrome.exe' });
+  const browser = process.env.ENGINE === 'webkit' ? await pw.webkit.launch() : await pw.chromium.launch({ executablePath: 'C:/Program Files/Google/Chrome/Application/chrome.exe' });
   let problems = 0;
   for (const [vp, size] of Object.entries(VIEWPORTS)) {
     const ctx = await browser.newContext({ viewport: size, deviceScaleFactor: vp === 'mobile' ? 2 : 1 });
