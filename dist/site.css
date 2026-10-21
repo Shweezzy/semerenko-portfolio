@@ -75,6 +75,12 @@ body.case-grid-layout > footer.case-grid-footer a:hover { color: #fff; }
   body .portfolio-menu-toggle svg { color: #111 !important; }
 }
 
+/* Open menu: the close "×" is centred in a 44px button, which left its glyph ~10px short of the
+   CV arrow's right edge. Pull the button over so both glyphs share one right edge. */
+@media (max-width: 750px) {
+  .portfolio-contact-menu .contact-panel-head .contact-menu-close { margin-right: -10px !important; }
+}
+
 /* Open menu on dark pages: a light panel so it stands apart from the dimmed dark page. */
 @media (max-width: 750px) {
   body.case-grid-layout .portfolio-contact-menu .contact-panel,
