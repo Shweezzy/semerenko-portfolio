@@ -49,6 +49,29 @@ edit('pets', html => replaceOnce(html,
   '<footer class="case-grid-footer"><span>© 2026 Anastasiia Semerenko</span><a href="#">↑ Back to top</a></footer>',
   FOOTER, 'pets footer'));
 
+// Pets hero title on phones: "ПРИТУЛОК." is ~5.8em wide and nowrap, so 17.5vw overflowed by ~42px.
+edit('pets', html => replaceOnce(html,
+  '.pet-hero h1{font-size:clamp(48px,17.5vw,76px)',
+  '.pet-hero h1{font-size:clamp(44px,15vw,76px)',
+  'pets hero title size'));
+
+// Synthetica badges sway on scroll at every width above phones (was tablet-only), including the
+// hero badge; the pointer sway stays as it was. Phones have their own script for the mobile trio.
+edit('landing', html => replaceOnce(html,
+  "if(root.matches('.badge-touch-composition')){const tablet=matchMedia('(min-width:751px) and (max-width:1024px)');",
+  "if(root.matches('.badge-touch-composition,.syn-hero-badge')){const tablet=matchMedia('(min-width:751px)');",
+  'badge scroll sway'));
+
+// Mobile menu button lives outside <header>: a backdrop-filter nested inside the header's own
+// backdrop-filter only blurs the header layer, so the button showed the page unblurred.
+for (const page of PAGES) {
+  edit(page, html => {
+    const m = html.match(/<button class="portfolio-menu-toggle"[\s\S]*?<\/button>(?=<\/header>)/);
+    if (!m) return html;
+    return html.replace(m[0] + '</header>', '</header>' + m[0]);
+  });
+}
+
 edit('index', html => {
   html = html.replace(/function updateWorkCounterValue\(element,next\)\{[\s\S]*?\}\}\}(?=function normalizeArrowIcons)/, COUNTER);
   if (!html.includes("className='count-reel'")) throw new Error('counter function not replaced');

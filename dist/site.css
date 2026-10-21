@@ -21,8 +21,19 @@
    drawing its poster, so this keeps the first frame visible until the video actually plays. */
 #syn-desktop-video { background: #080808 url(synthetica/desktop-poster-2.webp) center top / 100% auto no-repeat; }
 
+/* Synthetica badges: fade the lanyard strap out at the top instead of a hard cut-off. */
+.syn-hero-badge > img,
+.badge-touch-piece img,
+.syn-badges-mobile img {
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 24%);
+  mask-image: linear-gradient(to bottom, transparent 0, #000 24%);
+}
+
 /* Scroll hints live in document coordinates so they move with the page natively. */
 .mockup-gesture-hint { position: absolute !important; }
+/* Same icon + label everywhere (Synthetica hid the labels, leaving a 17px icon easy to miss). */
+.mockup-gesture-hint:not(.is-icon-only) { gap: 6px !important; }
+.mockup-gesture-hint:not(.is-icon-only) > span { display: inline !important; }
 
 /* One footer style for every case page: same muted text and hairline as the dark theme. */
 body.case-grid-layout > footer.case-grid-footer { color: #aaa; border-top: 1px solid #333; }
@@ -47,6 +58,20 @@ body.case-grid-layout > footer.case-grid-footer a:hover { color: #fff; }
     color: #111 !important;
   }
   body .portfolio-menu-toggle:active { background: rgba(235, 235, 235, .8) !important; }
+  /* The button sits next to <header> in the DOM (see apply-fixes.js); pin it where it was:
+     same top as the header pill, 7px to its right. */
+  body > .portfolio-menu-toggle {
+    position: fixed !important;
+    top: 12px !important;
+    right: 13px !important;
+    left: auto !important;
+    transform: none !important;
+    translate: none !important;
+    margin: 0 !important;
+    width: 44px !important;
+    height: 56px !important;
+    z-index: 1001;
+  }
   body .portfolio-menu-toggle svg { color: #111 !important; }
 }
 
@@ -61,6 +86,25 @@ body.case-grid-layout > footer.case-grid-footer a:hover { color: #fff; }
   body.case-grid-layout .portfolio-contact-menu .contact-menu-close:focus-visible { color: #000 !important; }
   body.case-grid-layout .portfolio-contact-menu .contact-panel > a:focus-visible { outline-color: #000; }
   body.case-grid-layout .portfolio-contact-menu.menu-visible::backdrop { background: rgba(0, 0, 0, .45); }
+}
+
+/* Arrows in links: on hover the arrow flies out along its own direction and comes back from the
+   opposite side. `transform` applies after the `rotate` each arrow carries (↗ → ↓ ← …), so one
+   rule moves every arrow the way it points. */
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  a:hover .geo-arrow,
+  button:hover .geo-arrow,
+  a:focus-visible .geo-arrow,
+  .menu-cv-block:hover svg {
+    translate: none !important;
+    animation: geo-arrow-fly .6s cubic-bezier(.5, 0, .2, 1);
+  }
+}
+@keyframes geo-arrow-fly {
+  0% { transform: translate(0, 0); opacity: 1; }
+  42% { transform: translate(60%, -60%); opacity: 0; }
+  43% { transform: translate(-60%, 60%); opacity: 0; }
+  100% { transform: translate(0, 0); opacity: 1; }
 }
 
 /* Page transitions (Chrome, Edge, Safari 18.2+; others just navigate): content cross-fades while
