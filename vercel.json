@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "framework": null,
+  "buildCommand": "",
+  "outputDirectory": "dist",
+  "cleanUrls": true,
+  "trailingSlash": false
+}

@@ -1,0 +1,772 @@
+{
+  "site_version": 201,
+  "source_commit": "2fbdc446f44bf06b7241247428adadea0e14a9b6",
+  "original_file_count": 153,
+  "files": [
+    {
+      "path": "dist/covers/education-laptop.svg",
+      "bytes": 1951932,
+      "sha256": "1762fae2e9a32182625ec740e7e6554903edb3a8188aab0810ac56ba87b93ee8"
+    },
+    {
+      "path": "dist/covers/education-screen-new.png",
+      "bytes": 1427092,
+      "sha256": "338151f669444bc7a28fce947a90abea568545cd8f69ec6fc7daaa2b5a33b565"
+    },
+    {
+      "path": "dist/covers/education.png",
+      "bytes": 1463762,
+      "sha256": "0ad412b6178a92d8485283f3bfcada91ce12be540dc75800fbfdf75dda0423db"
+    },
+    {
+      "path": "dist/covers/prytulok.png",
+      "bytes": 826124,
+      "sha256": "ce3508a55735a0320161727ed4addffacd02bdbef6457b613560d59cf26d9d5c"
+    },
+    {
+      "path": "dist/covers/synthetica-cover-badge.svg",
+      "bytes": 3245305,
+      "sha256": "d6bb0001b50b24bcb4fee74fd468466ab30b40ffa18729aae503642f6ccac4fb"
+    },
+    {
+      "path": "dist/covers/synthetica-screen-new.png",
+      "bytes": 437121,
+      "sha256": "6c640e068cd0cace0687c1dafbd94093cdf8d91a81f6f91a7e0c8b201e721fa8"
+    },
+    {
+      "path": "dist/covers/synthetica.png",
+      "bytes": 2433876,
+      "sha256": "ebeb344064448e05123eb5aad3605bcbeba25b8721cd1b4c7818b2e6fa79cd4c"
+    },
+    {
+      "path": "dist/education/admission.png",
+      "bytes": 237722,
+      "sha256": "1f378cad9f73ce977446366e27e9d68a72718ccbdaad7c9a86b5573aeeb2cc25"
+    },
+    {
+      "path": "dist/education/admissions/apply.png",
+      "bytes": 58697,
+      "sha256": "536cc70dac2b6e81ea5550bb1b1feeaa3633e94fbe0387f2fdf6d8d7ed30fc6a"
+    },
+    {
+      "path": "dist/education/admissions/faq.png",
+      "bytes": 151338,
+      "sha256": "957b2490902a598b9ec20411a8b118a72d27b8fd67455b80be8de15b6505e11f"
+    },
+    {
+      "path": "dist/education/admissions/footer.png",
+      "bytes": 107338,
+      "sha256": "5163208def4b2a25339a381434fa6896997f4f0132e56570943f6016603746f7"
+    },
+    {
+      "path": "dist/education/admissions/hero.png",
+      "bytes": 223897,
+      "sha256": "6124f2e9b6866d0b5799f9d51cd036ded9f43bf5aa22a76d13cbe2a2cba3a25a"
+    },
+    {
+      "path": "dist/education/admissions/housing.png",
+      "bytes": 96262,
+      "sha256": "e7cca68d702ec2eb56bc1c60f0d7e5795ce6cc7354af1c6cd688f7882d796050"
+    },
+    {
+      "path": "dist/education/admissions/open-day.png",
+      "bytes": 202410,
+      "sha256": "57ba129e752a15a60b7509817bbd90e157abe875a226d20e20aca043844ed021"
+    },
+    {
+      "path": "dist/education/admissions/registration.png",
+      "bytes": 1350226,
+      "sha256": "7a04aee5c4791b039a91149ac7f19dc954f73df7b92793d458cae8d7de783f64"
+    },
+    {
+      "path": "dist/education/admissions/requirements.png",
+      "bytes": 352043,
+      "sha256": "d731325a18159f15096f8efc183e476bb0760cf5310138287183b242b66ab00b"
+    },
+    {
+      "path": "dist/education/admissions/steps.png",
+      "bytes": 290771,
+      "sha256": "d4fa3458eef1d6eb9a8d41c7773393e83d713f5a0a529313119d6698e6a69f9d"
+    },
+    {
+      "path": "dist/education/application.png",
+      "bytes": 146570,
+      "sha256": "c381edede2c8f56e766c74d70d08dc581d7843a55901a5f906f62c90d6e80970"
+    },
+    {
+      "path": "dist/education/benefits.png",
+      "bytes": 2306867,
+      "sha256": "2410de037938e91823fc957bed06d31c2d0565abb2baf4c93e48ed8247dacc45"
+    },
+    {
+      "path": "dist/education/contacts/footer.png",
+      "bytes": 109305,
+      "sha256": "697c9c75b00d40afa75e5d5d49d9d8906c89dace37d79915dcbc7fef4683c5f6"
+    },
+    {
+      "path": "dist/education/contacts/form.png",
+      "bytes": 158630,
+      "sha256": "80efa96d39bbb4022681698c4580f8b59e28aba297fc763c4983bc4f9c9d1129"
+    },
+    {
+      "path": "dist/education/contacts/hero.png",
+      "bytes": 461452,
+      "sha256": "d9002b0bab43fb3f82bbcfc621d9bc643c0f88484282ad56737441e67976d917"
+    },
+    {
+      "path": "dist/education/documents/footer.png",
+      "bytes": 109305,
+      "sha256": "697c9c75b00d40afa75e5d5d49d9d8906c89dace37d79915dcbc7fef4683c5f6"
+    },
+    {
+      "path": "dist/education/documents/hero.png",
+      "bytes": 250302,
+      "sha256": "d48e2a64e72bd11f352dd7074cf82116a9761353572ac695c7762bc075de769e"
+    },
+    {
+      "path": "dist/education/documents/reports.png",
+      "bytes": 220113,
+      "sha256": "e4ddda3c691e1cc5a25e8fe27c64f75bee652129b42593f821496ab03edd9048"
+    },
+    {
+      "path": "dist/education/documents/request.png",
+      "bytes": 130292,
+      "sha256": "80578d3768be68f5bb48fd211c1a06e68bfbc5d96ba988ebfb82c79faddf93e4"
+    },
+    {
+      "path": "dist/education/events/footer.png",
+      "bytes": 109305,
+      "sha256": "697c9c75b00d40afa75e5d5d49d9d8906c89dace37d79915dcbc7fef4683c5f6"
+    },
+    {
+      "path": "dist/education/events/hero.png",
+      "bytes": 206131,
+      "sha256": "84981d6b6ca06358b2604be984ce98355b4fea70fb13ba8f57bd766454a45bcf"
+    },
+    {
+      "path": "dist/education/events/recent.png",
+      "bytes": 2844121,
+      "sha256": "c7f4fbdf9feef6be08c03957d0f8ef6cd55b49fbeb002b412828a8aedea3dfdd"
+    },
+    {
+      "path": "dist/education/events/upcoming.png",
+      "bytes": 168302,
+      "sha256": "bc8684642ec89f9d630cb9e19037acb121662670fcf085acf0b50c1f81c9afe4"
+    },
+    {
+      "path": "dist/education/events/videos.png",
+      "bytes": 1065524,
+      "sha256": "1f1fae8b10d2d95ddce19f1516b877016541b9d8045a4b370c01df07e3891375"
+    },
+    {
+      "path": "dist/education/facilities.png",
+      "bytes": 2696389,
+      "sha256": "2fcd9c35463031faf88d1c656336adbe35fb127fad457c8d0b9cc1934cba929a"
+    },
+    {
+      "path": "dist/education/footer.png",
+      "bytes": 107394,
+      "sha256": "43fc65913db819f657bee9b78e62226c759181d1031b0b41dd6485b8aa796749"
+    },
+    {
+      "path": "dist/education/hero.png",
+      "bytes": 1427092,
+      "sha256": "338151f669444bc7a28fce947a90abea568545cd8f69ec6fc7daaa2b5a33b565"
+    },
+    {
+      "path": "dist/education/mobile/admission.png",
+      "bytes": 329411,
+      "sha256": "9ba8550bf0c688fafd8a073f837b03088ab40cb447649004680ea564171b3bf0"
+    },
+    {
+      "path": "dist/education/mobile/admissions/application.png",
+      "bytes": 30464,
+      "sha256": "d82eb1249662ba74c09b061410890c85e1749c7106d9a495f1ea7061f168adb1"
+    },
+    {
+      "path": "dist/education/mobile/admissions/conditions.png",
+      "bytes": 206915,
+      "sha256": "48b9fb3b44328767b98e187de8933bba677ac0ee800c88f0964a1b26642696f2"
+    },
+    {
+      "path": "dist/education/mobile/admissions/dormitory.png",
+      "bytes": 69131,
+      "sha256": "486d7cb4b7dbeee594063ab0f258e165112a58911913f8ef5fd3b6c3d91b0aec"
+    },
+    {
+      "path": "dist/education/mobile/admissions/faq.png",
+      "bytes": 280746,
+      "sha256": "d1eeb71fca80594aadce667a7a0eda4bdd1f934b423ca7a797b8670233ea0fa7"
+    },
+    {
+      "path": "dist/education/mobile/admissions/footer.png",
+      "bytes": 187211,
+      "sha256": "79a9ed2975f49c393d5b899c813734fe1837af4b90d1f5c5cfe98ad83016b830"
+    },
+    {
+      "path": "dist/education/mobile/admissions/hero.png",
+      "bytes": 94015,
+      "sha256": "7dc50e558e61f7e69d5a5e829bb2d2747e800fc27926bc03664a62d51b7ba2c3"
+    },
+    {
+      "path": "dist/education/mobile/admissions/open-day.png",
+      "bytes": 248655,
+      "sha256": "74a48f78e8e3cffdbc927bb28e939763d5b3f08fcd20f2a59e3dc79430403cc8"
+    },
+    {
+      "path": "dist/education/mobile/admissions/steps.png",
+      "bytes": 217849,
+      "sha256": "b62bb951dd68c5d2879b8362d1455dbd31da5dc0e5b017d9f033281196776c5d"
+    },
+    {
+      "path": "dist/education/mobile/application.png",
+      "bytes": 69286,
+      "sha256": "82dc80dc2c48f32de4d41e23c48da4e2b8a39a4ae21c422e1ea78fd833f6fee0"
+    },
+    {
+      "path": "dist/education/mobile/benefits.png",
+      "bytes": 903045,
+      "sha256": "526e782bd566887786bcccb4366106f9764e6851df32d5f680489e1ee5dc12a2"
+    },
+    {
+      "path": "dist/education/mobile/facilities.png",
+      "bytes": 485748,
+      "sha256": "1cd653218ed3b3893cdaeaa49873db9535b520c13247b40af3443b6b6ead3461"
+    },
+    {
+      "path": "dist/education/mobile/footer.png",
+      "bytes": 60418,
+      "sha256": "2fa50cfb9a437b3f438461c3c4c15d19089519e45314f21617e0cfaae9508455"
+    },
+    {
+      "path": "dist/education/mobile/hero.png",
+      "bytes": 776270,
+      "sha256": "a6bd4293c322beff1021080f7644209f5c47939e4163b9c5ddbcd19de9d39452"
+    },
+    {
+      "path": "dist/education/mobile/news.png",
+      "bytes": 714709,
+      "sha256": "7a7def4fb07952b4d773964a5826ad372413de2a7ceab4129cd67af02bca8b42"
+    },
+    {
+      "path": "dist/education/mobile/practice.png",
+      "bytes": 950706,
+      "sha256": "f3efc8cf9f2820b79d0ef7d01de035cd9f0a6f1cb424ef60cccfa275284c5368"
+    },
+    {
+      "path": "dist/education/mobile/professions.png",
+      "bytes": 625291,
+      "sha256": "c912d01c70415d047e4be5b1bc664d6bcc289666bfe2fdcfe8a88197e2a93a00"
+    },
+    {
+      "path": "dist/education/mobile/reviews.png",
+      "bytes": 61868,
+      "sha256": "ee58574d2a815f4fe31b5572b6fac34f1df28f496ef20980612891f5bebe7602"
+    },
+    {
+      "path": "dist/education/mobile/statistics.png",
+      "bytes": 25336,
+      "sha256": "fdc532d55df7163497ecce732b82bc54930e713bde9c480c06ab3a0f85f585ef"
+    },
+    {
+      "path": "dist/education/news.png",
+      "bytes": 2383119,
+      "sha256": "6e8b45d01905729f659a1571eaefde095598ca4c4d6fbfe3656a788bdc4733b3"
+    },
+    {
+      "path": "dist/education/practice.png",
+      "bytes": 1159986,
+      "sha256": "6760383730e932cb68a7bb63f7c5279e8417c98716d75815a30f759e765af679"
+    },
+    {
+      "path": "dist/education/professions.png",
+      "bytes": 2825863,
+      "sha256": "6ec2247297f45d88e1421c861fe58c241e0f8f4197b3dcefd7935546226f485f"
+    },
+    {
+      "path": "dist/education/reviews.png",
+      "bytes": 230898,
+      "sha256": "e282effef4482200930dd37ceaafdc94d9364e8fb7ede92b5074d4eb65590e67"
+    },
+    {
+      "path": "dist/education/statistics.png",
+      "bytes": 74518,
+      "sha256": "18c2c1bc967577a7e48bfee8b75dea5fbd58df727849fd53f600b20ba2d60d03"
+    },
+    {
+      "path": "dist/education.html",
+      "bytes": 110775,
+      "sha256": "67ba425b3def902ae61b65e6af6ecfed90db3cf8daa66f10fff69da048cc3ab4"
+    },
+    {
+      "path": "dist/hero.png",
+      "bytes": 1427092,
+      "sha256": "338151f669444bc7a28fce947a90abea568545cd8f69ec6fc7daaa2b5a33b565"
+    },
+    {
+      "path": "dist/index.html",
+      "bytes": 103158,
+      "sha256": "90dc8dead414d65d1697d3e7cf999714077f7e285ad10c3760bb53081dd3115d"
+    },
+    {
+      "path": "dist/landing.html",
+      "bytes": 96455,
+      "sha256": "12ba3a12a8f9d6fbff816e2dfcbae9d3f6066cc503ddd7fd6f26f7ff2b2e346e"
+    },
+    {
+      "path": "dist/pets.html",
+      "bytes": 185750,
+      "sha256": "fb4050653c3a382754110319e292e899a12213d1c291e7fd6fab9609c0981763"
+    },
+    {
+      "path": "dist/portfolio-type.css",
+      "bytes": 5214,
+      "sha256": "cbc217f57e81db29142988502242c094ac74286141cac74b5f76c4c873e0cdc1"
+    },
+    {
+      "path": "dist/prytulok/accepted.png",
+      "bytes": 84827,
+      "sha256": "246b5a7eea71a5cb2b8e8531c4602afe0c1ed093d53390d9a844eb2f99f395f0"
+    },
+    {
+      "path": "dist/prytulok/active-applications.png",
+      "bytes": 249000,
+      "sha256": "3458b30247e39a9266a4e87aa41d9ef3b575dffdde633ad77b8ea2b1650796dc"
+    },
+    {
+      "path": "dist/prytulok/animal-support.png",
+      "bytes": 111023,
+      "sha256": "869bd2b5d671937cb35eb46e634a25a2fef865606601589a8d2c2442e3980818"
+    },
+    {
+      "path": "dist/prytulok/application-complete.png",
+      "bytes": 84827,
+      "sha256": "246b5a7eea71a5cb2b8e8531c4602afe0c1ed093d53390d9a844eb2f99f395f0"
+    },
+    {
+      "path": "dist/prytulok/apply.png",
+      "bytes": 49702,
+      "sha256": "080897da870a45b7111df5f6d869a27cc03fc71e189be7fbdece7eb87a429c2b"
+    },
+    {
+      "path": "dist/prytulok/bottom-navigation.png",
+      "bytes": 7170,
+      "sha256": "1dc39f9588e78db503dee0c91ff19120ac73384fa48392d5c9e79d7d5f5efae1"
+    },
+    {
+      "path": "dist/prytulok/catalog.png",
+      "bytes": 466505,
+      "sha256": "70532ddab7d24b8208fb4d437c4a405bbbb1dcd1a6b645a3d6e8e65139312ba4"
+    },
+    {
+      "path": "dist/prytulok/discover-intro.png",
+      "bytes": 421045,
+      "sha256": "d3113ba1123e8d2bf9b5c9bd52f702ba4659420beb9303cb7f680a6d21258a48"
+    },
+    {
+      "path": "dist/prytulok/discovery-onboarding-poster.png",
+      "bytes": 425989,
+      "sha256": "ab4ca47e67e772c3ab58d5c4445f259a9a018f4095fdda36d1466b1b195efc5e"
+    },
+    {
+      "path": "dist/prytulok/discovery-onboarding.mp4",
+      "bytes": 1383800,
+      "sha256": "223786e2d910cbb9d60ee331f63f8971b2b75cf867ee12426907b4ff75756d6b"
+    },
+    {
+      "path": "dist/prytulok/filters.png",
+      "bytes": 313618,
+      "sha256": "1ec1e9a2d8f9b34e341d0705427399b45a6d08fe2df3f1b20b437c89ca0764ad"
+    },
+    {
+      "path": "dist/prytulok/intro-poster.png",
+      "bytes": 10816,
+      "sha256": "5103e424e264bea970c5e14693ea575f7680b53f9725aaef2ed9f5ff96064e08"
+    },
+    {
+      "path": "dist/prytulok/intro.mp4",
+      "bytes": 446537,
+      "sha256": "f5acb07a32610b123d4d24bfcdcf2446ddb2f09351b041e51c542bafe295792a"
+    },
+    {
+      "path": "dist/prytulok/logo.svg",
+      "bytes": 388328,
+      "sha256": "258bc0bc5958d100b496b641c9796b988c6b0a4f59e129387b4d514f8632c5bb"
+    },
+    {
+      "path": "dist/prytulok/map-prototype.mp4",
+      "bytes": 1020227,
+      "sha256": "1462892c2620f579d3253b02930a43cc5fc132e9865cb957ce5c7c558b561ed0"
+    },
+    {
+      "path": "dist/prytulok/map.png",
+      "bytes": 304959,
+      "sha256": "e27ec35944c4be997deeee8afc23f3fac4186accf0b27e741d046e347b76cb4e"
+    },
+    {
+      "path": "dist/prytulok/meet-intro.png",
+      "bytes": 391714,
+      "sha256": "a12091ba0cb0a48359a8b963814d1906e9c901553f17d927eddb8d8cd84058b1"
+    },
+    {
+      "path": "dist/prytulok/meeting-application.png",
+      "bytes": 36858,
+      "sha256": "0dc83ba94fc1b980f3e443e10f8480ab60710ad6c0cea2f0b6da68b8cea636b6"
+    },
+    {
+      "path": "dist/prytulok/meeting-questionnaire-poster.png",
+      "bytes": 75137,
+      "sha256": "6afab9d79870c338eac036e19c05cc0f70da95e5e5f4c0aa8ce95560e5c3ad14"
+    },
+    {
+      "path": "dist/prytulok/meeting-questionnaire.mp4",
+      "bytes": 1731654,
+      "sha256": "348d68f2251840fa6dc436db3c929022a3427cd364e28a2b336efbdbba54999f"
+    },
+    {
+      "path": "dist/prytulok/meeting-questionnaire.png",
+      "bytes": 31583,
+      "sha256": "2557ed1909882223c141908464cfd153ffdc53e6b99142194a516a6085e42f57"
+    },
+    {
+      "path": "dist/prytulok/meeting-steps.png",
+      "bytes": 49702,
+      "sha256": "080897da870a45b7111df5f6d869a27cc03fc71e189be7fbdece7eb87a429c2b"
+    },
+    {
+      "path": "dist/prytulok/onboarding-1.png",
+      "bytes": 421045,
+      "sha256": "d3113ba1123e8d2bf9b5c9bd52f702ba4659420beb9303cb7f680a6d21258a48"
+    },
+    {
+      "path": "dist/prytulok/onboarding-2.png",
+      "bytes": 378924,
+      "sha256": "ee40e2ffeb3591246a57106b45f0ac14c7f9b3634204d0fb41400dbe14fd1c0b"
+    },
+    {
+      "path": "dist/prytulok/onboarding-3.png",
+      "bytes": 391714,
+      "sha256": "a12091ba0cb0a48359a8b963814d1906e9c901553f17d927eddb8d8cd84058b1"
+    },
+    {
+      "path": "dist/prytulok/paw-detail.svg",
+      "bytes": 388509,
+      "sha256": "43103201b78962d0998c21dfaec7f9b131d9dd7dc1a7ce5d68e03f5a98bb7445"
+    },
+    {
+      "path": "dist/prytulok/pending.png",
+      "bytes": 75362,
+      "sha256": "a5f0b21fd317164397f3052927e8aab9d44d99510bec53994159140b56b96269"
+    },
+    {
+      "path": "dist/prytulok/profile-shelter.png",
+      "bytes": 267834,
+      "sha256": "a6f5fc8a5f89d2c894fcfec2524699b15b49611dc8224552f94f071f11edcf0c"
+    },
+    {
+      "path": "dist/prytulok/profile-story.png",
+      "bytes": 274904,
+      "sha256": "c5abc36383850e4cc8d563c45850d2bc01b920b5b8e74c01e55caee59a45cb90"
+    },
+    {
+      "path": "dist/prytulok/profile-walkthrough-poster.png",
+      "bytes": 346381,
+      "sha256": "cd05f928d488ca4247019a901eff6b71bb97599bde52d7768abccf1492ad91de"
+    },
+    {
+      "path": "dist/prytulok/profile-walkthrough.mp4",
+      "bytes": 883356,
+      "sha256": "2b561ff9103cc993b4c8332e7ec95779bf148f8f0abe0b068d3df0480e977382"
+    },
+    {
+      "path": "dist/prytulok/profile.png",
+      "bytes": 257690,
+      "sha256": "c300344e8a27502e0cafaa7128cc3d2a11b61725ea0b6752fbae3ec74001fd35"
+    },
+    {
+      "path": "dist/prytulok/search.png",
+      "bytes": 435868,
+      "sha256": "98d3a2792373e55ab9de6f0fe0e9921ce2f486843327614847c202cc7d5ad462"
+    },
+    {
+      "path": "dist/prytulok/shelter-donation.png",
+      "bytes": 113290,
+      "sha256": "112a96501bed3f4c3ee0aa5c9722011846f373facb139b06293dbbb6321d3887"
+    },
+    {
+      "path": "dist/prytulok/support-intro.png",
+      "bytes": 378924,
+      "sha256": "ee40e2ffeb3591246a57106b45f0ac14c7f9b3634204d0fb41400dbe14fd1c0b"
+    },
+    {
+      "path": "dist/prytulok/support-payment-poster.png",
+      "bytes": 30602,
+      "sha256": "f210045d3b6b2c40226c77d144dae153f6670a35b462e1a27f6692ca210e67cc"
+    },
+    {
+      "path": "dist/prytulok/support-payment.mp4",
+      "bytes": 940188,
+      "sha256": "6df17a81941192d0b0f597bf888db21651f317dfc26f86564e7b3570b6e50255"
+    },
+    {
+      "path": "dist/prytulok/symbol.svg",
+      "bytes": 388326,
+      "sha256": "6164c4bdf1d462ddae53909f55227f63dea72e9a1ed3a8fcaeec8cff93a5a50d"
+    },
+    {
+      "path": "dist/prytulok/user-profile.png",
+      "bytes": 101254,
+      "sha256": "3f354915801a1301a33782e0f56ce0b316d2f6ebbb2578dd0f12b7df6f7d6d73"
+    },
+    {
+      "path": "dist/prytulok/volunteer-calendar.png",
+      "bytes": 140089,
+      "sha256": "a7d1847ee25948ca8a0e134ca60e795efc0ba69c4f56527a6a6070f6e4047f18"
+    },
+    {
+      "path": "dist/prytulok/volunteer-introduction.png",
+      "bytes": 56347,
+      "sha256": "594916c86cdad2751927560ee87cb38f35e9fca7d91b79578ea248f0511f4799"
+    },
+    {
+      "path": "dist/prytulok/volunteer-success-poster.png",
+      "bytes": 85972,
+      "sha256": "8f3b8a6f28910c40d1f271fed3476f6e19b653a1298d2fee27d720634e551cdc"
+    },
+    {
+      "path": "dist/prytulok/volunteer-success-updated-poster.png",
+      "bytes": 76583,
+      "sha256": "34dcec71ed27afe22bc41468f832728e639128b4e1291a8a264ccc1b7e5a02e8"
+    },
+    {
+      "path": "dist/prytulok/volunteer-success-updated.mp4",
+      "bytes": 922737,
+      "sha256": "b38c47c70a24b1aef0edabe0e65296e991080321c094cd337fbb3abcf59992e0"
+    },
+    {
+      "path": "dist/prytulok/volunteer-success.mp4",
+      "bytes": 936153,
+      "sha256": "0bf20121a2406e04fbda4d32bb6a2360624b520f01580b0bd4a89258c9902f30"
+    },
+    {
+      "path": "dist/prytulok/volunteer-walking.png",
+      "bytes": 93051,
+      "sha256": "8f532e97a79311ff16721d2d6b2aac86ce7ab0fcfc34a373694bcbddd0d01168"
+    },
+    {
+      "path": "dist/prytulok/welcome.png",
+      "bytes": 13822,
+      "sha256": "06be6ff1d1e21b48b6d0ace23972203551a570ed2afe205cf5aef539376d5604"
+    },
+    {
+      "path": "dist/screen-1.jpg",
+      "bytes": 159138,
+      "sha256": "28943e8da908c9c670a882ce2fae5963b483a573fe4631427f4c015e6b2b6fee"
+    },
+    {
+      "path": "dist/screen-2.png",
+      "bytes": 678671,
+      "sha256": "57a5036523fdd8c0e414098da23c67a54aeca2854cd4205c6c2e3452541fae12"
+    },
+    {
+      "path": "dist/screen-3.png",
+      "bytes": 1023147,
+      "sha256": "6df380086608b815afe379fb3a1e074b623378b1cfbd31703b84558f61ef4e92"
+    },
+    {
+      "path": "dist/screen-4.jpg",
+      "bytes": 159138,
+      "sha256": "28943e8da908c9c670a882ce2fae5963b483a573fe4631427f4c015e6b2b6fee"
+    },
+    {
+      "path": "dist/screen-5.jpg",
+      "bytes": 49488,
+      "sha256": "1b47490ede37401dbf9c77ca2fea3254826ad487596bfde16719389d154961f3"
+    },
+    {
+      "path": "dist/screen-6.jpg",
+      "bytes": 227347,
+      "sha256": "a3e468c110adccce2c772d0a4716741b2a897adc7a649cbfeb1581e113dbe46c"
+    },
+    {
+      "path": "dist/screen-7.jpg",
+      "bytes": 33175,
+      "sha256": "7be5366e1a97a64b367495b93cdb7ecd29e76b5d4e4823c0fa85d0c838097153"
+    },
+    {
+      "path": "dist/synthetica/badge-anastasia.svg",
+      "bytes": 1487225,
+      "sha256": "6630781e38951e16e1a166395df8fa1dc3d0560d3d3fb56340479d593e5fca17"
+    },
+    {
+      "path": "dist/synthetica/badge-emma.svg",
+      "bytes": 1487225,
+      "sha256": "7da3988e4948b109d4caedbd463438eee4323a3d5d7748021aebd32db3e242ad"
+    },
+    {
+      "path": "dist/synthetica/badge-kenji.svg",
+      "bytes": 1487226,
+      "sha256": "9760ac26e04f82869901ff760d777a8043cfb5617892b6d6669a65abeb3b5b23"
+    },
+    {
+      "path": "dist/synthetica/badge-whole-0.svg",
+      "bytes": 1487139,
+      "sha256": "c064fc547a362343cd9b16f73027cf63253a7fa55df7f06455ba821289e681f8"
+    },
+    {
+      "path": "dist/synthetica/badge-whole-1.svg",
+      "bytes": 1487140,
+      "sha256": "d62d026f3a2df216c449daeb450e815325de77d9544887abef9b77c8b7da8595"
+    },
+    {
+      "path": "dist/synthetica/badge-whole-2.svg",
+      "bytes": 1487139,
+      "sha256": "4924af60225a66ebda4213edec27cb866178557a75968e2cea4e7b88527b3c56"
+    },
+    {
+      "path": "dist/synthetica/badge-whole-3.svg",
+      "bytes": 1487141,
+      "sha256": "d17fb6da6b2efaf9015741974e0690b42581cbbc33a2ef6de1bb06c904388bab"
+    },
+    {
+      "path": "dist/synthetica/badge-whole-4.svg",
+      "bytes": 1487140,
+      "sha256": "fa6e98338572e1411618bdc9e6a1bdf1e8686b80240699bfc5b986c73d1cbcd2"
+    },
+    {
+      "path": "dist/synthetica/desktop-animation-2.mp4",
+      "bytes": 1410361,
+      "sha256": "ce426e9cc876dc0effed84325c32189818466301dce0a16bb4e2ef2b5c2ce2f0"
+    },
+    {
+      "path": "dist/synthetica/desktop-animation.mp4",
+      "bytes": 1409447,
+      "sha256": "484801815fbf889db4b1c728012f071307a46cdcb6078c276b327b09addd89dc"
+    },
+    {
+      "path": "dist/synthetica/desktop-poster-2.jpg",
+      "bytes": 297962,
+      "sha256": "41068468ccf0f2bb287f588fbbe0a64b082263991c268d5fdac698ad154ab825"
+    },
+    {
+      "path": "dist/synthetica/desktop-poster.jpg",
+      "bytes": 146195,
+      "sha256": "34c69f3afd037df3b3e7d68afee207891d9de083fbcd205667f05e5abc200dd4"
+    },
+    {
+      "path": "dist/synthetica/feedback.png",
+      "bytes": 1923927,
+      "sha256": "ff550ea9cab6f2602a7035ae20d624b7d25f5c6e89c3654f5ebf367b2bc7b5dc"
+    },
+    {
+      "path": "dist/synthetica/footer.png",
+      "bytes": 1443145,
+      "sha256": "4244c891fddc7a77736e0158ff37645fc85929ef6dc6b9be3d7df26fc67f6ae6"
+    },
+    {
+      "path": "dist/synthetica/hero-refined.png",
+      "bytes": 758815,
+      "sha256": "a0bcb1fa92e8ff49cbd446f472ba2c2d9dbe791602d588d2297955178ae0d1be"
+    },
+    {
+      "path": "dist/synthetica/hero.png",
+      "bytes": 178916,
+      "sha256": "ed1497cc804ee2c8fde6a9b3236502d91d7c3fb0e580305f74beeb12e8466b44"
+    },
+    {
+      "path": "dist/synthetica/mobile-animation-2.mp4",
+      "bytes": 416431,
+      "sha256": "b5d77d0e890457f0aa430b2f277e93e35275e6141acc78db55368ad8dbf965df"
+    },
+    {
+      "path": "dist/synthetica/mobile-animation-3.mp4",
+      "bytes": 164287,
+      "sha256": "b00a2eaa6caca0ac30c4bcaff1caa568b9ddcb4febbd8f9835ef9d0b4cc0133a"
+    },
+    {
+      "path": "dist/synthetica/mobile-animation-4.mp4",
+      "bytes": 467155,
+      "sha256": "50af49f91d78c2adfc2caf6cd327e7b2fd52ca0a80e57044fba82835c6a7d66d"
+    },
+    {
+      "path": "dist/synthetica/mobile-animation.mp4",
+      "bytes": 418155,
+      "sha256": "88d642381f843dd0fd9a597e57fdcb6d60a40fc7b43fc2aab86887172881b867"
+    },
+    {
+      "path": "dist/synthetica/mobile-full-original.png",
+      "bytes": 508092,
+      "sha256": "766d5397dd10d6b04dc8e3defe660712018173e9882a00848e5f1b250419b1e5"
+    },
+    {
+      "path": "dist/synthetica/mobile-poster-2.jpg",
+      "bytes": 167394,
+      "sha256": "0b6cb7ad8bfcb0d999d77837e3a3d298f079bb51025e088788a00b188c40b6a1"
+    },
+    {
+      "path": "dist/synthetica/mobile-poster-3.jpg",
+      "bytes": 62634,
+      "sha256": "cd8ef56a8b2f83f3f0e73e5461160be6049257dc1118f1e1dc51344923cb8998"
+    },
+    {
+      "path": "dist/synthetica/mobile-poster-4.jpg",
+      "bytes": 164293,
+      "sha256": "6bb20332cc66b4c14016017bafe9b0ddd8fbb2c2e3c8fc822c4067d9f8b6d12a"
+    },
+    {
+      "path": "dist/synthetica/mobile-poster.jpg",
+      "bytes": 167381,
+      "sha256": "2fb8fc6c58e75acb82ac924080e756483f421ce7f40225fac64655a323f848f4"
+    },
+    {
+      "path": "dist/synthetica/mobile-pricing.svg",
+      "bytes": 677677,
+      "sha256": "15dd4cd76309916bb655827eccffaf7b603d3de1248ffebbca84c28c93d627e1"
+    },
+    {
+      "path": "dist/synthetica/mobile-schedule.svg",
+      "bytes": 677677,
+      "sha256": "047dfef5973ba755c7d6f6f2612d1bfe73c8e1b820ab54110a61966507774121"
+    },
+    {
+      "path": "dist/synthetica/mobile-screen.png",
+      "bytes": 364984,
+      "sha256": "0263a64a1ce3719422a2d1a2f2324e50d3790c98356920159388cc989a48d527"
+    },
+    {
+      "path": "dist/synthetica/mobile-speakers.svg",
+      "bytes": 677676,
+      "sha256": "885ba1b1f58160e8f31cb2a80402519d5ed023ca528d2670f64d067628b68346"
+    },
+    {
+      "path": "dist/synthetica/partners.png",
+      "bytes": 1248720,
+      "sha256": "059066ad059699bef68d86744fc51b748bf4c510ad69c073433473d4650fc2d8"
+    },
+    {
+      "path": "dist/synthetica/schedule.png",
+      "bytes": 2028312,
+      "sha256": "ba2e8642cf4d58acf720278302633edc79686571280cf6ef2874a577591d8909"
+    },
+    {
+      "path": "dist/synthetica/speaker-cards.png",
+      "bytes": 1115251,
+      "sha256": "66b1dad4aaec0e234662f51ccc0ecb26390bdced9d71832572498cd5552dd7f9"
+    },
+    {
+      "path": "dist/synthetica/speakers.png",
+      "bytes": 958338,
+      "sha256": "42c759292d3d8770e0f794df190c59d09f8078a1b859b2761c8a12f8184fd120"
+    },
+    {
+      "path": "dist/synthetica/tickets.png",
+      "bytes": 1926345,
+      "sha256": "0c3de737bcf6ffb4ab20abae48aca28a0e38ebb0d764f2f9d9f7083afe663018"
+    },
+    {
+      "path": "dist/synthetica/why.png",
+      "bytes": 119394,
+      "sha256": "7bf000f8f172ffb8410be56dbe0ea0e1ddb2f5b97cb3970e64f8aa908fbab243"
+    }
+  ]
+}
