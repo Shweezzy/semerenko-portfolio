@@ -3,3 +3,5 @@ node_modules/
 _archive/
 _tools/node_modules/
 _tools/package-lock.json
+
+.vercel

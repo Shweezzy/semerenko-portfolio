@@ -21,7 +21,7 @@ const VIEWPORTS = { desktop: { width: 1440, height: 900 }, mobile: { width: 390,
       page.on('pageerror', e => log.push(`pageerror: ${e.message}`));
       page.on('requestfailed', r => log.push(`failed: ${r.url()} ${r.failure().errorText}`));
       page.on('response', r => r.status() >= 400 && log.push(`${r.status()}: ${r.url()}`));
-      await page.goto(`http://localhost:4173${url}`, { waitUntil: 'networkidle' });
+      await page.goto(`${process.env.BASE || 'http://localhost:4173'}${url}`, { waitUntil: 'networkidle' });
       await page.screenshot({ path: path.join(OUT, `${vp}${url === '/' ? '-index' : url.replace('/', '-')}.png`) });
       const height = await page.evaluate(() => document.documentElement.scrollHeight);
       for (let y = 0; y < height; y += size.height * 0.8) { await page.evaluate(v => scrollTo(0, v), y); await page.waitForTimeout(120); }
