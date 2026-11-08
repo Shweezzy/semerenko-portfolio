@@ -119,3 +119,28 @@ document.querySelectorAll('video[poster]').forEach(video => {
   addEventListener('resize', apply, { passive: true });
   apply();
 })();
+
+// Prytulok hero on phones: show the three hero screens in turn (desktop rotates their positions).
+(() => {
+  const art = document.querySelector('.pet-case .product-hero');
+  if (!art) return;
+  const order = ['intro-poster', 'onboarding-2', 'catalog'];
+  const phones = order.map(name => art.querySelector(`:scope > [data-product="${name}"]`)).filter(Boolean);
+  const mobile = matchMedia('(max-width:750px)'), reduce = matchMedia('(prefers-reduced-motion: reduce)');
+  let index = 0, timer = 0, visible = true;
+  const show = i => { index = (i + phones.length) % phones.length; phones.forEach((p, k) => p.classList.toggle('is-current', k === index)); };
+  const stop = () => { clearInterval(timer); timer = 0; };
+  const start = () => { stop(); if (art.classList.contains('is-rotating') && visible && !document.hidden) timer = setInterval(() => show(index + 1), 3000); };
+  function setup() {
+    const on = mobile.matches && !reduce.matches && phones.length > 1;
+    art.classList.toggle('is-rotating', on);
+    if (on) show(index); else phones.forEach(p => p.classList.remove('is-current'));
+    start();
+  }
+  phones.forEach(p => p.addEventListener('click', () => { if (art.classList.contains('is-rotating')) { show(index + 1); start(); } }));
+  new IntersectionObserver(entries => { visible = entries[0].isIntersecting; start(); }, { threshold: .2 }).observe(art);
+  document.addEventListener('visibilitychange', start);
+  mobile.addEventListener('change', setup);
+  reduce.addEventListener('change', setup);
+  setup();
+})();

@@ -4,7 +4,7 @@
   "original_file_count": 153,
   "optimized": true,
   "file_count": 107,
-  "total_bytes": 7039044,
+  "total_bytes": 7043188,
   "files": [
     {
       "path": "dist/apple-touch-icon.png",
@@ -298,8 +298,8 @@
     },
     {
       "path": "dist/index.html",
-      "bytes": 103722,
-      "sha256": "4196d231b2d32cdf88cfc7be7e541c973637b3c5076cc4c29b70d9dc861f4807"
+      "bytes": 104471,
+      "sha256": "693758a3d595c52c89525b879c99a50d0fe99b1d3ea1e051ba1952297b0fd153"
     },
     {
       "path": "dist/landing.html",
@@ -473,13 +473,13 @@
     },
     {
       "path": "dist/site.css",
-      "bytes": 7049,
-      "sha256": "29ef389e7cc0e3bcfdda911a35f15b618832c09c1fe2ac8f4ae68b2f18c0b8a7"
+      "bytes": 8911,
+      "sha256": "1322cfdaf8fe36b4e111f98f41ddd1e5ba75f8537d2c0fbaa80e0a4aeba4207a"
     },
     {
       "path": "dist/site.js",
-      "bytes": 7119,
-      "sha256": "b7b173749b54f4f0a7ba24908e6f867fb4577dfa07535dfe9a54b6f36acdfb0b"
+      "bytes": 8652,
+      "sha256": "11f3e3827617410650562bae335350b86402bd2e0cbccc9091aef932b2ed1794"
     },
     {
       "path": "dist/synthetica/badge-anastasia.webp",
