@@ -122,6 +122,46 @@ body > header { view-transition-name: site-header; }
   @view-transition { navigation: none; }
 }
 
+/* Home "Selected work" on phones: the three projects stack vertically instead of a sideways
+   carousel that hid two of them; the counter and progress bar only make sense for the carousel. */
+@media (max-width: 750px) {
+  #work .work-stage, #work .work-sticky { height: auto !important; }
+  #work .work-window { overflow: visible !important; }
+  #work .work-track {
+    flex-direction: column !important;
+    gap: 12px;
+    overflow: visible !important;
+    scroll-snap-type: none !important;
+    transform: none !important;
+  }
+  #work .work-slide { flex: none !important; width: 100% !important; }
+  #work .work-progress { display: none !important; }
+}
+
+/* Prytulok hero on phones: the three screens share one spot and cross-fade in turn (site.js),
+   mirroring the rotating phones on desktop. Without JS or with reduced motion the first stays. */
+@media (max-width: 750px) {
+  .pet-case .product-hero.arranged.is-rotating {
+    display: grid !important;
+    overflow: visible !important;
+    scroll-snap-type: none !important;
+  }
+  .pet-case .product-hero.arranged.is-rotating > .pet-phone {
+    display: block !important;
+    grid-area: 1 / 1;
+    justify-self: center;
+    opacity: 0 !important;
+    transform: translateY(14px) scale(.97) !important;
+    transition: opacity .7s ease, transform .9s cubic-bezier(.22, .61, .36, 1) !important;
+    pointer-events: none;
+  }
+  .pet-case .product-hero.arranged.is-rotating > .pet-phone.is-current {
+    opacity: 1 !important;
+    transform: none !important;
+    pointer-events: auto;
+  }
+}
+
 /* Home project counter: digits roll like a reel (animated in index.html). */
 .work-stage .work-progress .count-current .count-digit { display: inline-block; height: 1em; overflow: hidden; vertical-align: top; }
 .work-stage .work-progress .count-current .count-reel { display: flex; flex-direction: column; will-change: transform; }
