@@ -4,7 +4,7 @@
   "original_file_count": 153,
   "optimized": true,
   "file_count": 107,
-  "total_bytes": 7043188,
+  "total_bytes": 7054459,
   "files": [
     {
       "path": "dist/apple-touch-icon.png",
@@ -28,8 +28,8 @@
     },
     {
       "path": "dist/education.html",
-      "bytes": 107710,
-      "sha256": "020e95423df84b1787f54a9b56742e9f37530e26fbe4130d37a9ebe47e13ddd0"
+      "bytes": 108023,
+      "sha256": "e87e37dc6982c58b2641c5a0cddfd061105d6746577fdccf6f56a81b234cffa9"
     },
     {
       "path": "dist/education/admission.webp",
@@ -298,23 +298,23 @@
     },
     {
       "path": "dist/index.html",
-      "bytes": 104471,
-      "sha256": "693758a3d595c52c89525b879c99a50d0fe99b1d3ea1e051ba1952297b0fd153"
+      "bytes": 109758,
+      "sha256": "5b85eb9147e219e271bbb4ea08a37fcc17136fd89fac5208434b9860bfe7c658"
     },
     {
       "path": "dist/landing.html",
-      "bytes": 92789,
-      "sha256": "c9e1c45976e1ca12d2caad285b9dea7129cb1d0034d99e3361d1573777e8ebba"
+      "bytes": 93104,
+      "sha256": "b1487501e7acf8bcb411d8239cfdad14c3767e32054c5a68507d98cc9836b0b8"
     },
     {
       "path": "dist/og-image.jpg",
-      "bytes": 44687,
-      "sha256": "9600ba782e72b5be58d17f93c8f5407a8b7597394797a6e2c676d8d522766361"
+      "bytes": 49133,
+      "sha256": "b58178e12f006a1d5a7e1405af3bfd01157363afb0eb293ac11458724e931997"
     },
     {
       "path": "dist/pets.html",
-      "bytes": 182132,
-      "sha256": "eb6bdaa0d237739a6bd813a5f2e71fdc31e9b5569fedbc4f427bc89b85bb3cca"
+      "bytes": 182412,
+      "sha256": "eb6db7bb3361e6694abedeba22ecb5f9793ffaf1f08722f1ff4922edad3e5571"
     },
     {
       "path": "dist/portfolio-type.css",
@@ -473,8 +473,8 @@
     },
     {
       "path": "dist/site.css",
-      "bytes": 8911,
-      "sha256": "1322cfdaf8fe36b4e111f98f41ddd1e5ba75f8537d2c0fbaa80e0a4aeba4207a"
+      "bytes": 9541,
+      "sha256": "2c27fdc70c055c9ca8400d78bd3e2b4ae5c96c30a3098aaa08d9f964ab7c58d7"
     },
     {
       "path": "dist/site.js",

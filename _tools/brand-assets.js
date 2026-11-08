@@ -5,7 +5,7 @@ const DIST = path.join(__dirname, '..', 'dist');
 const FONT = "font-family:Arial,Helvetica,sans-serif;font-weight:900;letter-spacing:-.075em;line-height:.91";
 
 const OG = `<body style="margin:0;width:1200px;height:630px;background:#fff;color:#000;${FONT};display:flex;flex-direction:column;justify-content:space-between;padding:64px 72px;box-sizing:border-box">
-  <div style="font-size:24px;letter-spacing:0;font-weight:700;display:flex;justify-content:space-between"><span>UI/UX Designer</span><span>Portfolio ↗</span></div>
+  <div style="font-size:24px;letter-spacing:0;font-weight:700;display:flex;justify-content:space-between"><span>Junior UI/UX Designer · Uzhhorod, Ukraine</span><span>Portfolio ↗</span></div>
   <div style="font-size:150px">Anastasiia<br>Semerenko.</div>
   <div style="font-size:26px;letter-spacing:0;font-weight:400;line-height:1.4;max-width:900px">Education redesign · Prytulok app · Synthetica 2025</div>
 </body>`;

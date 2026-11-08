@@ -4,8 +4,8 @@ const fs = require('fs'), path = require('path');
 const SITE = (process.argv[2] || 'https://semerenko-portfolio.vercel.app').replace(/\/$/, '');
 const DIST = path.join(__dirname, '..', 'dist');
 const PAGES = {
-  index: { url: '/', description: 'Anastasiia Semerenko — UI/UX designer. Portfolio with an education website redesign, the Prytulok pet adoption app and the Synthetica 2025 landing page.' },
-  education: { url: '/education', description: 'Redesign of the RC PTO vocational education centre website: research, structure, desktop and mobile prototypes. Case study by Anastasiia Semerenko.' },
+  index: { url: '/', description: 'Anastasiia Semerenko — Junior UI/UX designer from Uzhhorod, Ukraine. Portfolio with an education website redesign, the Prytulok pet adoption app and the Synthetica 2025 landing page.' },
+  education: { url: '/education', description: 'Redesign of the RC PTO vocational education center website: research, structure, desktop and mobile prototypes. Case study by Anastasiia Semerenko.' },
   pets: { url: '/pets', description: 'Prytulok — mobile app concept for adopting and supporting shelter animals: onboarding, catalog, map, meetings and volunteering. Case study by Anastasiia Semerenko.' },
   landing: { url: '/landing', description: 'Synthetica 2025 — landing page concept for an AI × Design conference, from visual direction to an adaptive interface. Case study by Anastasiia Semerenko.' },
 };
