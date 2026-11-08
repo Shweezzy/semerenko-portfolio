@@ -9,7 +9,7 @@ const { chromium } = require('playwright-core');
   const statuses = [];
   page.on('response', r => r.request().isNavigationRequest() && statuses.push(`${r.status()} ${new URL(r.url()).pathname}${new URL(r.url()).hash}`));
   await page.goto('http://localhost:4194/', { waitUntil: 'networkidle' });
-  for (const sel of ['a[href="/pets"]', 'a[href="/landing"]', 'a[href="/education"]', 'header a[href="/"]']) {
+  for (const sel of ['a[href="/pets"]', 'a[href="/landing"]', 'header a[href="/#work"]', 'a[href="/education"]', 'header a[href="/"]']) {
     await page.locator(sel).first().click({ force: true });
     await page.waitForLoadState('networkidle');
     console.log(`${sel} -> ${new URL(page.url()).pathname}  view transition: ${await page.evaluate(() => window.__vt)}`);

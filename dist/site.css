@@ -184,3 +184,26 @@ body > header { view-transition-name: site-header; }
 @media (prefers-reduced-motion: reduce) {
   html.scroll-timeline .reading .word { animation: none; opacity: 1; }
 }
+
+/* Home: role, location and availability above the name. */
+.hero > .hero-role {
+  margin: 0 0 clamp(18px, 2.4vw, 32px);
+  font-size: clamp(13px, 1.05vw, 16px);
+  font-weight: 500;
+  letter-spacing: .01em;
+  line-height: 1.4;
+}
+.hero > .hero-role::before {
+  content: "";
+  display: inline-block;
+  width: .55em;
+  height: .55em;
+  margin-right: .6em;
+  border-radius: 50%;
+  background: #1fbf5b; /* "open to opportunities" */
+  vertical-align: .05em;
+}
+
+/* Home "About me": interests line under the four facts. */
+#profile .profile-interests { margin: 36px 0 0; color: #555; }
+#profile .process-list p + p { margin-top: 12px; }
